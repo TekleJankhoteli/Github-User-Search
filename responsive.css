@@ -1,0 +1,288 @@
+@media screen and (min-width: 768px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        width: 768px;
+        background-color: var(--darkerBG);
+        padding: 0;
+        
+    }
+    header{
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    .form{display: flex;
+        justify-content: center;
+        align-content: center;
+        align-self: center;
+        width:573px;
+        height: 69px;
+        background-color: var(--darkBG);
+        border-radius: 15px;
+         padding-left: 16px; 
+         padding-right: 7px;
+         margin-bottom: 20px;
+    }
+
+
+    .input{
+        text-decoration: none;
+        background: none;
+        border: none;
+        text-align: center;
+        width: 300px;
+        background-image: url(./assets/loop.svg);
+        background-repeat: no-repeat;
+        background-position:center left;
+        padding-left: 25px;
+        font-size: 13px;
+        color: white;
+        text-align: start;
+        
+    
+    }
+
+
+    .inputBtn{
+        width: 130px;
+        height: 50px;
+        border: none;
+        background-color: var(--bluebtn);
+        border-radius: 10px;
+        align-self: center;
+        color: white;
+    }
+
+    .noRessult{padding-top: 10px;
+        padding-left: 20px;
+        font-size: 16px;
+        color: red;
+        width: 110px;
+    }
+
+    .main{
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        align-content:center;
+        align-self: center;
+        width: 573px;
+        background-color:var(--darkBG);
+        border-radius: 15px;
+        margin-bottom: 60px;
+   
+    }
+
+    .profile{
+        display: flex;
+         align-self:center; 
+        /* padding-right: 150px; */
+         gap: 20px;
+        margin-top: 30px;
+       
+        
+    }
+
+
+    .activities{
+        display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    width: 493px;
+    height: 85px;
+    background-color: var(--darkerBG);
+    border-radius: 10px;
+    margin-top: 23px;
+    margin-bottom: 23px;
+    }
+
+    .additionalInfo{
+        display: flex;
+        flex-direction: row;
+       gap: 50px;
+       padding-left: 35px;
+    }
+
+    .lightContainer{
+        background-color: var(--lightGray);
+    }
+
+    .lightH1{
+        color: var(--darkerBG);
+    }
+    
+    .lightPlight{
+        color: #4B6A9B;
+    }
+    
+    .lightForm{
+        background-color: white;
+    }
+    
+    .lightMain{
+        background-color: white;
+    }
+    
+    .lightActivities{
+        background-color: var(--lightGray);
+    }
+    
+    .lightReposNumb{
+        color: var(--darkerBG);
+    }
+    
+    .lightPlace{
+     color:#4B6A9B;
+     background-image: url(./assets/lightplace.svg);
+    }
+    
+    .lightGithub{
+        color:#4B6A9B;
+        background-image: url(./assets/lighturl.svg);
+    }
+    .lightTwitter{
+        color:#4B6A9B;
+        background-image: url(./assets/lighttwitter.svg);
+    }
+    .lightGit2{
+        color:#4B6A9B;
+        background-image: url(./assets/lightbuilding.svg);
+    }
+    
+    .lightInput{
+        color: #2B3442;
+    }
+}
+
+@media screen and (min-width: 1400px){
+    .container{
+        width: 100%;
+        height: 100vh;
+       
+    }
+
+    .form{
+        width: 730px;
+
+    }
+
+    .input{width: 350px;
+
+    }
+
+    .noRessult{
+        width: 160px;
+    }
+
+    .main{
+        width: 730px;
+    }
+.profileInfowraper{
+    display: flex;
+    flex-direction: row;
+
+}
+
+
+.profileInfo{
+  display: flex;
+  flex-direction: column; 
+   margin-bottom: 50px;
+  
+    
+}
+.createDate{display: flex;
+justify-content: flex-end;
+position: relative;
+left: 60px;
+ 
+   
+}
+.profile{
+    align-self: flex-start;
+    padding-left: 50px;
+}
+
+
+    .inputBtn{
+        margin-left: 40px;
+    }
+
+    .activities{
+        display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content:flex-end;
+    width: 470px;
+    height: 85px;
+    background-color: var(--darkerBG);
+    border-radius: 10px;
+    margin-top: 23px;
+    margin-bottom: 23px;
+    margin-left: 100px;
+    }
+    .additionalInfo{
+        display: flex;
+        flex-direction: row;
+       gap: 45px;
+       margin-left: 140px;}
+
+    header{
+        padding-left:27%;
+        padding-right: 27%;
+       
+    }
+
+    .lightContainer{
+        background-color: var(--lightGray);
+    }
+
+    .lightH1{
+        color: var(--darkerBG);
+    }
+    
+    .lightPlight{
+        color: #4B6A9B;
+    }
+    
+    .lightForm{
+        background-color: white;
+    }
+    
+    .lightMain{
+        background-color: white;
+    }
+    
+    .lightActivities{
+        background-color: var(--lightGray);
+    }
+    
+    .lightReposNumb{
+        color: var(--darkerBG);
+    }
+    
+    .lightPlace{
+     color:#4B6A9B;
+     background-image: url(./assets/lightplace.svg);
+    }
+    
+    .lightGithub{
+        color:#4B6A9B;
+        background-image: url(./assets/lighturl.svg);
+    }
+    .lightTwitter{
+        color:#4B6A9B;
+        background-image: url(./assets/lighttwitter.svg);
+    }
+    .lightGit2{
+        color:#4B6A9B;
+        background-image: url(./assets/lightbuilding.svg);
+    }
+    
+    .lightInput{
+        color: #2B3442;
+    }
+}

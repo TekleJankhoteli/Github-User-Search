@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+*,*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Space Mono';
+}
+
+:root{
+    --black:#222731;
+    --darkerBG:#141D2F;
+    --darkBG:#1E2A47;
+    --bluebtn:#0079FF;
+    --lightBluebtn:#60ABFF;
+    --gray:#4B6A9B;
+    --lightGray:#F6F8FF;
+    --red:#F74646;
+   
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    
+}
+
+.container{
+    display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+       align-self: center;
+    width: 375px;
+    background-color: var(--darkerBG);
+    padding: 0;
+    
+
+   
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 35px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.h1{
+    color: white;
+}
+.plight{
+    color: white;
+}
+
+.darkLightmode{
+    display: flex;
+   align-items: center;
+   gap: 16px;
+
+}
+
+.darkLightmode:hover{
+    cursor: pointer;
+    
+}
+
+.form{display: flex;
+    align-self: center;
+    width: 327px;
+    height: 60px;
+    background-color: var(--darkBG);
+    border-radius: 15px;
+     padding-left: 16px; 
+     padding-right: 7px;
+     margin-bottom: 16px;
+}
+
+.input{
+    text-decoration: none;
+    background: none;
+    border: none;
+    text-align: center;
+    width: 130px;
+    background-image: url(./assets/loop.svg);
+    background-repeat: no-repeat;
+    background-position:center left;
+    padding-left: 25px;
+    font-size: 13px;
+    color: white;
+    text-align: start;
+    
+
+}
+
+.noRessult{padding-top: 5px;
+    padding-left: 20px;
+    font-size: 16px;
+    color: red;
+    width: 110px;
+}
+.input:focus{
+    outline: none;
+
+}
+
+.inputBtn{
+    width: 84px;
+    height: 46px;
+    border: none;
+    background-color: var(--bluebtn);
+    border-radius: 10px;
+    align-self: center;
+    color: white;
+}
+
+.inputBtn:hover{
+    cursor: pointer;
+    transition: 1s;
+    background-color: var(--lightBluebtn);
+}
+
+.input:hover{
+    cursor: pointer;
+}
+.input:focus:hover{
+    cursor: auto;
+}
+
+input:focus::placeholder {
+    color: transparent;
+  }
+
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    width: 327px;
+    background-color:var(--darkBG);
+    border-radius: 15px;
+    margin-bottom: 60px;
+}
+
+.profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center; 
+     gap: 20px;
+    margin-top: 30px;
+   
+    
+}
+.profileInfowraper{
+    display:flex;
+    flex-direction: column;
+
+}
+
+
+.img{
+    width: 110px;
+    height: 110px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.bio{
+    display: flex;
+    text-align: center;
+    font-size: 13px;
+    margin-top: 20px;
+    color: #4B6A9B;
+}
+
+.activities{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    width: 280px;
+    height: 85px;
+    background-color: var(--darkerBG);
+    border-radius: 10px;
+    margin-top: 23px;
+    margin-bottom: 23px;
+}
+.repos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+.followers{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+.following{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+.repos h2{
+    font-size: 11px;
+    color: #697C9A;
+    font-weight: 400;
+}
+.followers h2{
+    font-size: 11px;
+    color: #697C9A;
+    font-weight: 400;
+}
+
+.following h2{
+    font-size: 11px;
+    color: #697C9A;
+    font-weight: 400;
+}
+.reposNumb{
+    font-size: 16px;
+    color: white;
+}
+.followersNumb{
+    font-size: 16px;
+    color: white;
+}
+
+.followingNumb{
+    font-size: 16px;
+    color: white;
+}
+
+
+
+.additionalInfo{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    align-self: flex-start;
+    margin-bottom: 50px;
+    padding-left: 20px;
+    color: white;
+}
+
+.placeAndGithub{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.twitterAndgit2{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.place{
+    background-image: url(./assets/place.svg);
+    background-repeat: no-repeat;
+    background-position: 5%;
+    padding-left: 40px;
+    color: #4B6A9B;
+}
+.github{
+    background-image: url(./assets/url.svg);
+    background-repeat: no-repeat;
+    background-position: 5%;
+    padding-left: 40px;
+    color: #4B6A9B;
+}
+
+.twitter{
+    background-image: url(./assets/twitter.svg);
+    background-repeat: no-repeat;
+    background-position: 5%;
+    padding-left: 40px;
+    color: #4B6A9B;
+}
+
+.git2{
+    background-image: url(./assets/building.svg);
+    background-repeat: no-repeat;
+    background-position: 5%;
+    padding-left: 40px;
+    color: #4B6A9B;
+}
+
+a{
+    text-decoration: none;
+    color:#4B6A9B;
+}
+
+/* dark/light mode */
+
+.lightContainer{
+    background-color: var(--lightGray);
+}
+
+.lightH1{
+    color: var(--darkerBG);
+}
+
+.lightPlight{
+    color: #4B6A9B;
+}
+
+.lightForm{
+    background-color: white;
+}
+
+.lightMain{
+    background-color: white;
+}
+
+.lightActivities{
+    background-color: var(--lightGray);
+}
+
+.lightReposNumb{
+    color: var(--darkerBG);
+}
+
+.lightPlace{
+ color:#4B6A9B;
+ background-image: url(./assets/lightplace.svg);
+}
+
+.lightGithub{
+    color:#4B6A9B;
+    background-image: url(./assets/lighturl.svg);
+}
+.lightTwitter{
+    color:#4B6A9B;
+    background-image: url(./assets/lighttwitter.svg);
+}
+.lightGit2{
+    color:#4B6A9B;
+    background-image: url(./assets/lightbuilding.svg);
+}
+
+.lightInput{
+    color: #2B3442;
+}
