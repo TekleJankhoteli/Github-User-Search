@@ -150,6 +150,16 @@ input:focus::placeholder {
     margin-bottom: 60px;
 }
 
+
+.loader{
+    width: 500px;
+  height: 500px;
+  background-image: url(./assets/loader.gif);
+  background-size: cover;
+  margin: 20px auto;
+  display: none; 
+
+}
 .profile{
     display: flex;
     justify-content: center;
@@ -173,6 +183,20 @@ input:focus::placeholder {
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 50%;
+}
+
+.login{
+    color: white;
+    font-size: 16px;
+}
+.nameLittle{
+    color: white;
+    font-size: 16px;
+}
+
+.createDate{
+    color: white;
+    font-size: 16px;
 }
 
 .bio{
@@ -354,4 +378,14 @@ a{
 
 .lightInput{
     color: #2B3442;
+}
+.lightLogin{
+    color: #2B3442;
+}
+
+.lightNamelittle{
+    color: #2B3442; 
+}
+.lightdate{
+    color: #2B3442; 
 }

@@ -22,6 +22,7 @@ let place=document.querySelector(".place");
 let github=document.querySelector(".github");
 let twitter=document.querySelector(".twitter");
 let git2=document.querySelector(".git2");
+let loader=document.querySelector(".loader");
 
 
 darkLightmode.addEventListener("click", ()=>{
@@ -54,6 +55,9 @@ function lightMode(){
 
  main.classList.toggle("lightMain");
 
+login.classList.toggle("lightLogin");
+nameLittle.classList.toggle("lightNamelittle");
+createDate.classList.toggle("lightdate");
  activities.classList.toggle("lightActivities");
 
  reposNumb.classList.toggle("lightReposNumb");
@@ -81,30 +85,40 @@ form.addEventListener("submit", async (event) => {
   event.preventDefault(); 
   const username = input.value.trim();
   if (username !== "") {
-      try {
-          const response = await fetch(`https://api.github.com/users/${username}`);
 
+    
+      try {
+        loader.style.display="block";
+        main.style.display = "none";
+
+          const response = await fetch(`https://api.github.com/users/${username}`);
+       
           if (response.ok) {
               const data = await response.json();
               displayUserData(data);
+              loader.style.display="none";
           } else if (response.status === 404) {
               
               noRessult.textContent = "User Not Found.";
               main.style.display = "none";
+              loader.style.display="none";
 
           } else {
               throw new Error("Error fetching data.");
+              loader.style.display="none";
           }
       } catch (error) {
           
           noRessult.textContent = "Error fetching data. Please try again later.";
           main.style.display = "none";
+          loader.style.display="none";
 
       }
   } else {
      
       noRessult.textContent = "Please enter a GitHub username.";
       main.style.display = "none";
+      loader.style.display="none";
   }
 });
 
